@@ -1,0 +1,190 @@
+/* ==========================================================================
+   LAYOUT & SECTIONS (Apple Minimalist Standard)
+   ========================================================================== */
+
+.container {
+  width: min(100% - 3.5rem, var(--max-width));
+  margin-inline: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.section {
+  position: relative;
+  padding: 8rem 0;
+  overflow: hidden;
+}
+
+/* 1. HERO SECTION */
+.section--hero {
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 11rem 0 5rem;
+  text-align: center;
+  position: relative;
+}
+
+.hero-meta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--color-ice-blue);
+  background: rgba(226, 236, 255, 0.05);
+  border: 1px solid var(--border-medium);
+  padding: 6px 18px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 2rem;
+  backdrop-filter: blur(16px);
+}
+.hero-meta-badge .dot {
+  width: 6px;
+  height: 6px;
+  background: var(--color-blue-electric);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--color-blue-electric);
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 9.5vw, 8.8rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  margin-bottom: 1.75rem;
+  color: var(--color-paper-white);
+  position: relative;
+}
+.hero-title span {
+  color: var(--color-blue-electric);
+}
+
+.hero-subtitle {
+  font-family: var(--font-sans);
+  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--color-paper-muted);
+  max-width: 680px;
+  margin: 0 auto 3rem;
+  letter-spacing: -0.01em;
+}
+.hero-subtitle strong {
+  color: var(--color-paper-white);
+  font-weight: 600;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  z-index: 5;
+  position: relative;
+}
+
+/* 2. SECTION HEADERS */
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 5;
+}
+.section-eyebrow {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-blue-electric);
+  margin-bottom: 0.8rem;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5.2vw, 4.4rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--color-paper-white);
+  text-transform: uppercase;
+}
+.section-title span {
+  color: var(--color-blue-electric);
+}
+.section-desc {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--color-paper-muted);
+  max-width: 580px;
+  margin: 1rem auto 0;
+}
+
+/* 3. FOOTER */
+.site-footer {
+  background: var(--color-navy-void);
+  border-top: 1px solid var(--border-subtle);
+  padding: 3.5rem 0;
+  position: relative;
+  z-index: 5;
+}
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.footer-copy {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-paper-dim);
+}
+.footer-back-to-top {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-ice-blue);
+  border: 1px solid var(--border-medium);
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  transition: all var(--duration-fast);
+}
+.footer-back-to-top:hover {
+  background: var(--color-blue-electric);
+  color: #fff;
+  border-color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section {
+    padding: 5.5rem 0;
+  }
+  .nav-links, .nav-cta-btn {
+    display: none;
+  }
+  .nav-hamburger {
+    display: flex;
+  }
+  .nav-float {
+    height: 56px;
+    padding: 0 1.25rem;
+  }
+  .vault-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
