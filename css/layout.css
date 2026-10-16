@@ -1,27 +1,28 @@
 /* ==========================================================================
-   LAYOUT & SECTIONS
+   LAYOUT & SECTIONS (Apple Minimalist Standard)
    ========================================================================== */
 
 .container {
-  width: min(100% - 3rem, var(--max-width));
+  width: min(100% - 3.5rem, var(--max-width));
   margin-inline: auto;
   position: relative;
+  z-index: 2;
 }
 
 .section {
   position: relative;
-  padding: 7rem 0;
+  padding: 8rem 0;
   overflow: hidden;
 }
 
 /* 1. HERO SECTION */
 .section--hero {
-  min-height: 100vh;
+  min-height: 92vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 9rem 0 4rem;
+  padding: 11rem 0 5rem;
   text-align: center;
   position: relative;
 }
@@ -30,20 +31,21 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 0.8rem;
-  letter-spacing: 0.16em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   color: var(--color-ice-blue);
-  background: rgba(14, 34, 64, 0.7);
+  background: rgba(226, 236, 255, 0.05);
   border: 1px solid var(--border-medium);
-  padding: 6px 16px;
+  padding: 6px 18px;
   border-radius: var(--radius-pill);
   margin-bottom: 2rem;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(16px);
 }
 .hero-meta-badge .dot {
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   background: var(--color-blue-electric);
   border-radius: 50%;
   box-shadow: 0 0 10px var(--color-blue-electric);
@@ -51,66 +53,63 @@
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(3.2rem, 9.5vw, 9.2rem);
+  font-size: clamp(3.5rem, 9.5vw, 8.8rem);
   font-weight: 900;
-  line-height: 0.92;
+  line-height: 0.95;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
   color: var(--color-paper-white);
-  text-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
   position: relative;
-  user-select: none;
 }
 .hero-title span {
   color: var(--color-blue-electric);
-  text-shadow: 0 0 40px rgba(28, 100, 242, 0.8);
 }
 
 .hero-subtitle {
   font-family: var(--font-sans);
-  font-size: clamp(1.1rem, 2.2vw, 1.45rem);
+  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
   font-weight: 400;
-  line-height: 1.5;
-  color: var(--color-ice-blue);
-  max-width: 720px;
-  margin: 0 auto 2.75rem;
+  line-height: 1.55;
+  color: var(--color-paper-muted);
+  max-width: 680px;
+  margin: 0 auto 3rem;
   letter-spacing: -0.01em;
 }
 .hero-subtitle strong {
   color: var(--color-paper-white);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.25rem;
+  gap: 1rem;
   justify-content: center;
   z-index: 5;
   position: relative;
 }
 
-/* 2. SECTION HEADINGS (Brutalist Editorial) */
+/* 2. SECTION HEADERS */
 .section-header {
   text-align: center;
-  margin-bottom: 3.5rem;
+  margin-bottom: 4rem;
   position: relative;
   z-index: 5;
 }
 .section-eyebrow {
   display: inline-block;
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--color-blue-electric);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.8rem;
 }
 .section-title {
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  font-size: clamp(2.4rem, 5.2vw, 4.4rem);
   font-weight: 900;
   line-height: 1.05;
   letter-spacing: -0.03em;
@@ -121,10 +120,11 @@
   color: var(--color-blue-electric);
 }
 .section-desc {
+  font-family: var(--font-sans);
   font-size: 1.05rem;
   line-height: 1.6;
   color: var(--color-paper-muted);
-  max-width: 620px;
+  max-width: 580px;
   margin: 1rem auto 0;
 }
 
@@ -132,7 +132,7 @@
 .site-footer {
   background: var(--color-navy-void);
   border-top: 1px solid var(--border-subtle);
-  padding: 3rem 0;
+  padding: 3.5rem 0;
   position: relative;
   z-index: 5;
 }
@@ -143,28 +143,19 @@
   justify-content: space-between;
   gap: 1.5rem;
 }
-.footer-logo {
-  font-family: var(--font-display);
-  font-size: 1.25rem;
-  font-weight: 900;
-  letter-spacing: -0.02em;
-}
-.footer-logo span {
-  color: var(--color-blue-electric);
-}
 .footer-copy {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
-  color: var(--color-paper-muted);
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-paper-dim);
 }
 .footer-back-to-top {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.1em;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
   color: var(--color-ice-blue);
   border: 1px solid var(--border-medium);
-  padding: 6px 14px;
+  padding: 6px 16px;
   border-radius: var(--radius-pill);
   transition: all var(--duration-fast);
 }
@@ -177,7 +168,7 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .section {
-    padding: 5rem 0;
+    padding: 5.5rem 0;
   }
   .nav-links, .nav-cta-btn {
     display: none;
@@ -186,13 +177,10 @@
     display: flex;
   }
   .nav-float {
-    height: 60px;
+    height: 56px;
     padding: 0 1.25rem;
   }
   .vault-grid {
-    grid-template-columns: 1fr;
-  }
-  .stats-grid {
     grid-template-columns: 1fr;
   }
   .footer-inner {
