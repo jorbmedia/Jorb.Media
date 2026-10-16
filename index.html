@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JORB.MEDIA | Motion Design & High-Retention Visuals</title>
+  <meta name="description" content="Jorb.media — Commercial motion design, kinetic branding, high-converting VSLs, and surgical post-production for brands and creators that shatter the scroll.">
+  
+  <!-- Favicon (After Effects Keyframe) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a192f'/%3E%3Cpolygon points='16,5 27,16 16,27 5,16' fill='%231c64f2'/%3E%3Cpolygon points='16,10 22,16 16,22 10,16' fill='%23ffffff'/%3E%3C/svg%3E">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Plus+Jakarta+Sans:wght@400;500;700&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/textures.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+
+  <!-- 1. Textures & Visual Noise Stack -->
+  <div class="global-grain" aria-hidden="true"></div>
+  <div class="global-paper" aria-hidden="true"></div>
+  <div class="scanlines-overlay" aria-hidden="true"></div>
+
+  <!-- 2. Floating Navbar -->
+  <nav class="nav-float halftone-overlay" role="navigation" aria-label="Main Navigation">
+    <a href="#" class="nav-logo" aria-label="Jorb.media Home">
+      <img src="assets/logo-white.png" alt="Jorb.media Logo" class="nav-logo-img">
+    </a>
+
+    <div class="nav-status">
+      SYSTEM: ACTIVE · 60 FPS
+    </div>
+
+    <div class="nav-links">
+      <a href="#showreel" class="nav-link">01 · SHOWREEL</a>
+      <a href="#vault" class="nav-link">02 · WORK VAULT</a>
+      <a href="#blueprint" class="nav-link">03 · BLUEPRINT</a>
+      <a href="#contact" class="nav-link">04 · CONTACT</a>
+    </div>
+
+    <a href="#contact" class="nav-cta-btn">
+      <span>START A PROJECT</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </a>
+
+    <!-- Mobile Hamburger Toggle -->
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="#showreel" class="mobile-menu__link">01 · SHOWREEL / VSL</a>
+    <a href="#vault" class="mobile-menu__link">02 · WORK VAULT</a>
+    <a href="#blueprint" class="mobile-menu__link">03 · BLUEPRINT</a>
+    <a href="#contact" class="mobile-menu__link">04 · CONTACT</a>
+  </div>
+
+  <!-- ========================================================================
+       SECTION 1: HERO (Brutalist Kinetic Motion)
+       ======================================================================== -->
+  <header class="section section--hero halftone-overlay" id="hero">
+    <!-- Grid Column Guide Lines -->
+    <div class="editorial-grid-guides" aria-hidden="true">
+      <div class="grid-line"></div>
+      <div class="grid-line"></div>
+      <div class="grid-line"></div>
+      <div class="grid-line"></div>
+    </div>
+
+    <!-- Framing Crop Marks -->
+    <div class="crop-mark crop-mark--tl" aria-hidden="true"></div>
+    <div class="crop-mark crop-mark--tr" aria-hidden="true"></div>
+    <div class="crop-mark crop-mark--bl" aria-hidden="true"></div>
+    <div class="crop-mark crop-mark--br" aria-hidden="true"></div>
+
+    <!-- Halftone bands -->
+    <div class="halftone-band halftone-band--top" aria-hidden="true"></div>
+    <div class="halftone-band halftone-band--bottom" aria-hidden="true"></div>
+
+    <!-- Floating After Effects UI Elements with Parallax -->
+    <div class="drift-element ae-keyframe" style="top: 22%; left: 8%;" data-parallax-depth="0.35" aria-hidden="true"></div>
+    <div class="drift-element ae-anchor" style="top: 68%; left: 12%;" data-parallax-depth="0.7" aria-hidden="true"></div>
+    <div class="drift-element ae-reg" style="top: 28%; right: 10%;" data-parallax-depth="0.45" aria-hidden="true"></div>
+    <div class="drift-element ae-scrubber" style="top: 75%; right: 18%;" data-parallax-depth="0.8" aria-hidden="true"></div>
+    <div class="drift-element ae-keyframe" style="bottom: 18%; right: 6%;" data-parallax-depth="0.25" aria-hidden="true"></div>
+    
+    <!-- Live Running Timecode Indicator -->
+    <div class="drift-element ae-timecode" style="top: 14%; right: 18%;" data-parallax-depth="0.5" id="live-ae-timecode" aria-hidden="true">
+      00:02:14:<span>00</span>
+    </div>
+
+    <div class="container">
+      <div class="hero-meta-badge">
+        <span class="dot"></span>
+        <span>MOTION DESIGN & RETENTION LAB · 2026</span>
+      </div>
+
+      <h1 class="hero-title">
+        JORB<span>.MEDIA</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Motion design that <strong>shatters the scroll</strong>, commands viewer retention, and transforms narratives into <strong>high-converting commercial impact</strong>.
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn-primary" data-video-id="Q9GlmSb3DUk" data-video-title="The AI Room — High-Converting VSL" data-video-tag="FEATURED SHOWREEL">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <span>WATCH SHOWREEL 2026</span>
+        </button>
+
+        <a href="#vault" class="btn-secondary">
+          <span>EXPLORE WORK VAULT</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Infinite Ticker / Marquee Tape -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker">
+      <span>MOTION GRAPHICS</span><span class="ticker__sep">×</span>
+      <span>KINETIC BRANDING</span><span class="ticker__sep">×</span>
+      <span>HIGH RETENTION</span><span class="ticker__sep">×</span>
+      <span>HIGH-CONVERTING VSL</span><span class="ticker__sep">×</span>
+      <span>SPEED RAMPS & CURVES</span><span class="ticker__sep">×</span>
+      <span>2D & 3D ANIMATION</span><span class="ticker__sep">×</span>
+      <span>COMMERCIAL STORYTELLING</span><span class="ticker__sep">×</span>
+      <span>SURGICAL AFTER EFFECTS</span><span class="ticker__sep">×</span>
+      <!-- Seamless loop duplicate -->
+      <span>MOTION GRAPHICS</span><span class="ticker__sep">×</span>
+      <span>KINETIC BRANDING</span><span class="ticker__sep">×</span>
+      <span>HIGH RETENTION</span><span class="ticker__sep">×</span>
+      <span>HIGH-CONVERTING VSL</span><span class="ticker__sep">×</span>
+      <span>SPEED RAMPS & CURVES</span><span class="ticker__sep">×</span>
+      <span>2D & 3D ANIMATION</span><span class="ticker__sep">×</span>
+      <span>COMMERCIAL STORYTELLING</span><span class="ticker__sep">×</span>
+      <span>SURGICAL AFTER EFFECTS</span><span class="ticker__sep">×</span>
+    </div>
+  </div>
+
+  <!-- Torn Divider Hero -> VSL Spotlight -->
+  <div class="torn-divider torn-divider--blue" aria-hidden="true">
+    <svg viewBox="0 0 1200 48" preserveAspectRatio="none">
+      <path d="M0,0 C150,35 320,12 500,28 C680,44 850,15 1020,38 C1110,48 1170,18 1200,32 L1200,48 L0,48 Z"></path>
+    </svg>
+  </div>
+
+  <!-- ========================================================================
+       SECTION 2: SPOTLIGHT SHOWREEL / VSL
+       ======================================================================== -->
+  <section class="section section--spotlight halftone-overlay-blue" id="showreel">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">01 · FEATURED PRODUCTION</span>
+        <h2 class="section-title">THE KINETIC <span>SHOWCASE</span></h2>
+        <p class="section-desc">Aggressive narrative pacing built to hook, educate, and convert demanding audiences.</p>
+      </div>
+
+      <!-- Cinema Spotlight Card -->
+      <div class="spotlight-card">
+        <div class="spotlight-video-wrap" data-video-id="Q9GlmSb3DUk" data-video-title="The AI Room — High-Converting VSL" data-video-tag="FEATURED VSL" data-video-aspect="16-9">
+          <img src="https://img.youtube.com/vi/Q9GlmSb3DUk/maxresdefault.jpg" alt="The AI Room VSL Thumbnail" class="spotlight-video-img" loading="lazy">
+          <div class="vault-card__play-btn">
+            <svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+          </div>
+          <div class="vault-card__badge">VSL SPOTLIGHT</div>
+          <div class="vault-card__timecode">03:45:12</div>
+        </div>
+
+        <div class="spotlight-content">
+          <span class="spotlight-badge">HIGH-RETENTION VSL</span>
+          <h3>The AI Room — Video Sales Letter</h3>
+          <p style="color: var(--color-paper-muted); margin-bottom: 1.5rem; line-height: 1.6;">
+            A high-converting flagship piece structured to lock viewer retention from the very first frame to the closing call to action. Blends kinetic typography, custom product UI, immersive sound design, and razor-sharp timeline pacing.
+          </p>
+
+          <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 2rem;">
+            <span class="vault-card__tag">COMMERCIAL NARRATIVE</span>
+            <span class="vault-card__tag">AI MOTION</span>
+            <span class="vault-card__tag">DYNAMIC PACING</span>
+            <span class="vault-card__tag">AFTER EFFECTS</span>
+          </div>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button class="btn-primary" data-video-id="Q9GlmSb3DUk" data-video-title="The AI Room — High-Converting VSL" data-video-tag="FEATURED VSL" data-video-aspect="16-9">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span>WATCH PRODUCTION</span>
+            </button>
+            <a href="https://youtu.be/Q9GlmSb3DUk" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              <span>OPEN ON YOUTUBE ↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 3: THE VAULT (Work & Projects with Filter Tabs)
+       ======================================================================== -->
+  <section class="section section--vault halftone-overlay" id="vault">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">02 · SELECTED WORK & PRODUCTIONS</span>
+        <h2 class="section-title">THE WORK <span>VAULT</span></h2>
+        <p class="section-desc">A curated roster of high-retention motion design and editing for online academies, corporate firms, and top creators.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs" role="tablist">
+        <button class="filter-tab is-active" data-filter="all">ALL [7]</button>
+        <button class="filter-tab" data-filter="projects">LONG-FORM & DOCUMENTARY [4]</button>
+        <button class="filter-tab" data-filter="reels">REELS & SHORTS 9:16 [2]</button>
+        <button class="filter-tab" data-filter="vsl">VSL [1]</button>
+      </div>
+
+      <!-- Grid of Projects -->
+      <div class="vault-grid">
+
+        <!-- Card 1: Academia Entrenadores 2026 -->
+        <article class="vault-card" data-category="projects" data-video-id="vJcaFOe0J9M" data-video-title="REVEALED: 2026 Fitness Trends Study — Academia Entrenadores Online" data-video-tag="DOCUMENTARY" data-video-aspect="16-9">
+          <div class="vault-card__media">
+            <img src="https://img.youtube.com/vi/vJcaFOe0J9M/maxresdefault.jpg" alt="2026 Fitness Trends" class="vault-card__img" loading="lazy">
+            <div class="vault-card__play-btn"><svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg></div>
+            <div class="vault-card__badge">CORE PRODUCTION</div>
+            <div class="vault-card__timecode">08:24:10</div>
+            <a href="https://www.youtube.com/watch?v=vJcaFOe0J9M" target="_blank" rel="noopener noreferrer" class="card-yt-direct-btn" title="Open directly on YouTube">
+              <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.8 31.8 0 0 0 0 12a31.8 31.8 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.4-1.8.5-3.8.5-5.8s-.1-4-.5-5.8zM9.5 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+              <span>YT ↗</span>
+            </a>
+          </div>
+          <div class="vault-card__info">
+            <span class="vault-card__client">Academia Entrenadores Online</span>
+            <h3 class="vault-card__title">2026 Fitness Market Studies & Narrative Analysis</h3>
+            <div class="vault-card__tags">
+              <span class="vault-card__tag">RETENTION</span>
+              <span class="vault-card__tag">MOTION GRAPHICS</span>
+              <span class="vault-card__tag">DOCUMENTARY</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: 5 Types of Viral Content -->
+        <article class="vault-card" data-category="projects" data-video-id="4wonhlezFBM" data-video-title="5 Viral Content Formats in 2026 — Academia Entrenadores Online" data-video-tag="VIRAL CONTENT" data-video-aspect="16-9">
+          <div class="vault-card__media">
+            <img src="https://img.youtube.com/vi/4wonhlezFBM/maxresdefault.jpg" alt="Viral Formats 2026" class="vault-card__img" loading="lazy">
+            <div class="vault-card__play-btn"><svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg></div>
+            <div class="vault-card__badge">VIRAL ANALYSIS</div>
+            <div class="vault-card__timecode">06:48:05</div>
+            <a href="https://www.youtube.com/watch?v=4wonhlezFBM" target="_blank" rel="noopener noreferrer" class="card-yt-direct-btn" title="Open directly on YouTube">
+              <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.8 31.8 0 0 0 0 12a31.8 31.8 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.4-1.8.5-3.8.5-5.8s-.1-4-.5-5.8zM9.5 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+              <span>YT ↗</span>
+            </a>
+          </div>
+          <div class="vault-card__info">
+            <span class="vault-card__client">Academia Entrenadores Online</span>
+            <h3 class="vault-card__title">5 High-Impact Viral Formats Dominating the US</h3>
+            <div class="vault-card__tags">
+              <span class="vault-card__tag">ADVANCED EDITING</span>
+              <span class="vault-card__tag">DYNAMIC PACING</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: 2X Revenue in 3 Steps -->
+        <article class="vault-card" data-category="projects" data-video-id="MQFYJdtyv8Q" data-video-title="Double Your Revenue in 3 Steps — Academia Entrenadores Online" data-video-tag="BUSINESS MOTION" data-video-aspect="16-9">
+          <div class="vault-card__media">
+            <img src="https://img.youtube.com/vi/MQFYJdtyv8Q/maxresdefault.jpg" alt="Double Revenue" class="vault-card__img" loading="lazy">
+            <div class="vault-card__play-btn"><svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg></div>
+            <div class="vault-card__badge">CONVERSION</div>
+            <div class="vault-card__timecode">11:15:20</div>
+            <a href="https://www.youtube.com/watch?v=MQFYJdtyv8Q" target="_blank" rel="noopener noreferrer" class="card-yt-direct-btn" title="Open directly on YouTube">
+              <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.8 31.8 0 0 0 0 12a31.8 31.8 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.4-1.8.5-3.8.5-5.8s-.1-4-.5-5.8zM9.5 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+              <span>YT ↗</span>
+            </a>
+          </div>
+          <div class="vault-card__info">
+            <span class="vault-card__client">Academia Entrenadores Online</span>
+            <h3 class="vault-card__title">Double Your Revenue in 3 Steps Strategy</h3>
+            <div class="vault-card__tags">
+              <span class="vault-card__tag">DYNAMIC INFOGRAPHICS</span>
+              <span class="vault-card__tag">BRANDING</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: Case Study 2000€ -->
+        <article class="vault-card" data-category="projects" data-video-id="gnB5EvMhJGQ" data-video-title="How I Scaled My First 2000€ Case Study — Academia Entrenadores Online" data-video-tag="CASE STUDY" data-video-aspect="16-9">
+          <div class="vault-card__media">
+            <img src="https://img.youtube.com/vi/gnB5EvMhJGQ/maxresdefault.jpg" alt="Case Study" class="vault-card__img" loading="lazy">
+            <div class="vault-card__play-btn"><svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg></div>
+            <div class="vault-card__badge">STORYTELLING</div>
+            <div class="vault-card__timecode">09:30:14</div>
+            <a href="https://www.youtube.com/watch?v=gnB5EvMhJGQ" target="_blank" rel="noopener noreferrer" class="card-yt-direct-btn" title="Open directly on YouTube">
+              <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.8 31.8 0 0 0 0 12a31.8 31.8 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.4-1.8.5-3.8.5-5.8s-.1-4-.5-5.8zM9.5 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+              <span>YT ↗</span>
+            </a>
+          </div>
+          <div class="vault-card__info">
+            <span class="vault-card__client">Academia Entrenadores Online</span>
+            <h3 class="vault-card__title">Scaling Revenue: Personal Brand Case Study</h3>
+            <div class="vault-card__tags">
+              <span class="vault-card__tag">SURGICAL PACING</span>
+              <span class="vault-card__tag">COLOR GRADING</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5: Reel Crash Captain (Vertical 9:16) -->
+        <article class="vault-card vault-card--vertical" data-category="reels" data-video-id="Rwd3MMvGE6o" data-video-title="Crash Captain Social Video — Clon Podcast" data-video-tag="REEL 9:16" data-video-aspect="9-16">
+          <div class="vault-card__media">
+            <img src="https://img.youtube.com/vi/Rwd3MMvGE6o/maxresdefault.jpg" alt="Crash Captain Reel" class="vault-card__img" loading="lazy">
+            <div class="vault-card__play-btn"><svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg></div>
+            <div class="vault-card__badge" style="background:#e11d48;">SHORT 9:16</div>
+            <div class="vault-card__timecode">00:48:15</div>
+            <a href="https://youtube.com/shorts/Rwd3MMvGE6o" target="_blank" rel="noopener noreferrer" class="card-yt-direct-btn" title="Open directly on YouTube Shorts">
+              <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.8 31.8 0 0 0 0 12a31.8 31.8 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.4-1.8.5-3.8.5-5.8s-.1-4-.5-5.8zM9.5 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+              <span>SHORTS ↗</span>
+            </a>
+          </div>
+          <div class="vault-card__info">
+            <span class="vault-card__client">Crash Captain · Clon Podcast</span>
+            <h3 class="vault-card__title">Kinetic Social Media Micro-Content</h3>
+            <div class="vault-card__tags">
+              <span class="vault-card__tag">REEL 9:16</span>
+              <span class="vault-card__tag">ANIMATED CAPTIONS</span>
+              <span class="vault-card__tag">ZOOMS & CUTS</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6: Reel Ferrer Law (Vertical 9:16) -->
+        <article class="vault-card vault-card--vertical" data-category="reels" data-video-id="09mFiImqVSQ" data-video-title="Ferrer Law Social Video — Corporate Motion" data-video-tag="REEL 9:16" data-video-aspect="9-16">
+          <div class="vault-card__media">
+            <img src="https://img.youtube.com/vi/09mFiImqVSQ/maxresdefault.jpg" alt="Ferrer Law Reel" class="vault-card__img" loading="lazy">
+            <div class="vault-card__play-btn"><svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg></div>
+            <div class="vault-card__badge" style="background:#e11d48;">SHORT 9:16</div>
+            <div class="vault-card__timecode">00:54:02</div>
+            <a href="https://youtube.com/shorts/09mFiImqVSQ" target="_blank" rel="noopener noreferrer" class="card-yt-direct-btn" title="Open directly on YouTube Shorts">
+              <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.8 31.8 0 0 0 0 12a31.8 31.8 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.4-1.8.5-3.8.5-5.8s-.1-4-.5-5.8zM9.5 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+              <span>SHORTS ↗</span>
+            </a>
+          </div>
+          <div class="vault-card__info">
+            <span class="vault-card__client">Ferrer Law Firm</span>
+            <h3 class="vault-card__title">Corporate Motion & Brand Authority</h3>
+            <div class="vault-card__tags">
+              <span class="vault-card__tag">HIGH-TICKET</span>
+              <span class="vault-card__tag">CORPORATE</span>
+              <span class="vault-card__tag">CLEAN GRAPHICS</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 7: VSL The AI Room -->
+        <article class="vault-card" data-category="vsl" data-video-id="Q9GlmSb3DUk" data-video-title="The AI Room — High-Converting VSL" data-video-tag="VSL" data-video-aspect="16-9">
+          <div class="vault-card__media">
+            <img src="https://img.youtube.com/vi/Q9GlmSb3DUk/maxresdefault.jpg" alt="The AI Room VSL" class="vault-card__img" loading="lazy">
+            <div class="vault-card__play-btn"><svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg></div>
+            <div class="vault-card__badge">HIGH-TICKET VSL</div>
+            <div class="vault-card__timecode">03:45:12</div>
+            <a href="https://youtu.be/Q9GlmSb3DUk" target="_blank" rel="noopener noreferrer" class="card-yt-direct-btn" title="Open directly on YouTube">
+              <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.8 31.8 0 0 0 0 12a31.8 31.8 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.4-1.8.5-3.8.5-5.8s-.1-4-.5-5.8zM9.5 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+              <span>YT ↗</span>
+            </a>
+          </div>
+          <div class="vault-card__info">
+            <span class="vault-card__client">The AI Room</span>
+            <h3 class="vault-card__title">High-Retention Video Sales Letter</h3>
+            <div class="vault-card__tags">
+              <span class="vault-card__tag">VSL</span>
+              <span class="vault-card__tag">AI MOTION</span>
+              <span class="vault-card__tag">CONVERSION</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Live Performance Metrics -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-val">+150<span>K</span></div>
+          <div class="stat-label">Generated Video Views</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">100<span>%</span></div>
+          <div class="stat-label">Bespoke Speed Ramps & Curves</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">0<span>%</span></div>
+          <div class="stat-label">Cookie-Cutter Templates</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">60<span>FPS</span></div>
+          <div class="stat-label">Surgical Master Finishing</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Torn Divider Vault -> Blueprint -->
+  <div class="torn-divider torn-divider--void" aria-hidden="true">
+    <svg viewBox="0 0 1200 48" preserveAspectRatio="none">
+      <path d="M0,24 C200,45 420,8 600,32 C780,48 980,12 1200,28 L1200,48 L0,48 Z"></path>
+    </svg>
+  </div>
+
+  <!-- ========================================================================
+       SECTION 4: THE BLUEPRINT / METHODOLOGY
+       ======================================================================== -->
+  <section class="section section--blueprint halftone-overlay-blue" id="blueprint">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">03 · PRODUCTION FRAMEWORK</span>
+        <h2 class="section-title">THE CREATIVE <span>BLUEPRINT</span></h2>
+        <p class="section-desc">A 4-step framework engineered to eliminate technical friction and maximize viewer watch time.</p>
+      </div>
+
+      <div class="blueprint-grid">
+        <!-- Step 1 -->
+        <div class="process-card">
+          <div class="process-card__number">01</div>
+          <h3 class="process-card__title">DIRECTION & HOOK</h3>
+          <p class="process-card__desc">
+            We dissect the narrative and assemble the visual moodboard. 3-second hooks engineered to eliminate scroll and lock audience gaze immediately.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-card" style="transform: translateY(18px);">
+          <div class="process-card__number">02</div>
+          <h3 class="process-card__title">KINETIC MOTION & RAMPS</h3>
+          <p class="process-card__desc">
+            Handcrafted velocity graphs in After Effects, kinetic typography, 2D/3D elements, and micro-interactions that keep dopamine levels high.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-card" style="transform: translateY(-12px);">
+          <div class="process-card__number">03</div>
+          <h3 class="process-card__title">SOUND DESIGN & TEXTURES</h3>
+          <p class="process-card__desc">
+            Audio represents 50% of retention. Visceral risers, analog swooshes, tactile foley, halftone grit, and cinematic color finishing.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process-card" style="transform: translateY(8px);">
+          <div class="process-card__number">04</div>
+          <h3 class="process-card__title">DELIVERY & SCALED IMPACT</h3>
+          <p class="process-card__desc">
+            Master multi-platform exports (16:9 widescreen, 9:16 vertical) prepped for paid ad scale, organic virality, and measurable conversions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 5: CONTACT & CALL TO ACTION
+       ======================================================================== -->
+  <section class="section section--cta halftone-overlay" id="contact">
+    <div class="container">
+      <div class="cta-box">
+        <!-- Crop Marks -->
+        <div class="crop-mark crop-mark--tl" aria-hidden="true"></div>
+        <div class="crop-mark crop-mark--tr" aria-hidden="true"></div>
+        <div class="crop-mark crop-mark--bl" aria-hidden="true"></div>
+        <div class="crop-mark crop-mark--br" aria-hidden="true"></div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <img src="assets/logo-white.png" alt="Jorb.media" style="height: 52px; width: auto; margin: 0 auto 1.5rem; filter: drop-shadow(0 0 16px rgba(28, 100, 242, 0.6));">
+        </div>
+
+        <span class="section-eyebrow">LAUNCH YOUR NEXT PRODUCTION</span>
+        <h2 class="section-title" style="margin-bottom: 1.25rem;">
+          READY TO COMMAND <span>THE SCROLL</span>?
+        </h2>
+        <p class="section-desc" style="margin: 0 auto 2.5rem;">
+          I partner with brands, agencies, and high-impact creators who know average content is invisible. Let's discuss your next production today.
+        </p>
+
+        <!-- Direct Contact Badges -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin-bottom: 2rem;">
+          <div style="background: rgba(14, 34, 64, 0.8); border: 1px solid var(--border-medium); padding: 0.8rem 1.6rem; border-radius: var(--radius-sm); font-family: var(--font-mono); font-size: 0.9rem; color: var(--color-ice-blue);">
+            PHONE / WHATSAPP: <strong style="color: #ffffff;">+57 300857325</strong>
+          </div>
+          <div style="background: rgba(14, 34, 64, 0.8); border: 1px solid var(--border-medium); padding: 0.8rem 1.6rem; border-radius: var(--radius-sm); font-family: var(--font-mono); font-size: 0.9rem; color: var(--color-ice-blue);">
+            EMAIL: <strong style="color: #ffffff;">jorbustosvisuals@gmail.com</strong>
+          </div>
+        </div>
+
+        <div class="cta-links">
+          <!-- WhatsApp Direct -->
+          <a href="https://wa.me/57300857325?text=Hi%20Jorge,%20I%20saw%20your%20portfolio%20at%20Jorb.media%20and%20would%20love%20to%20quote%20a%20motion%20design%20project!" target="_blank" rel="noopener noreferrer" class="cta-channel-btn cta-channel-btn--wa">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 2C6.516 2 2.031 6.484 2.031 12c0 1.954.562 3.828 1.625 5.438L2 22l4.672-1.609A9.965 9.965 0 0 0 12.031 22c5.516 0 10-4.484 10-10s-4.484-10-10-10zm0 18.281c-1.688 0-3.328-.484-4.75-1.391l-.344-.219-2.781.953.953-2.703-.234-.375a8.27 8.27 0 0 1-1.281-4.547c0-4.563 3.719-8.281 8.281-8.281 4.563 0 8.281 3.719 8.281 8.281 0 4.563-3.719 8.281-8.281 8.281z"/>
+            </svg>
+            <span>WHATSAPP (+57 300857325)</span>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:jorbustosvisuals@gmail.com" class="cta-channel-btn cta-channel-btn--mail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>JORBUSTOSVISUALS@GMAIL.COM</span>
+          </a>
+
+          <!-- YouTube -->
+          <a href="https://www.youtube.com/@jorgebustos" target="_blank" rel="noopener noreferrer" class="cta-channel-btn cta-channel-btn--yt">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+            <span>YOUTUBE CHANNEL</span>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://instagram.com/jorb.media" target="_blank" rel="noopener noreferrer" class="cta-channel-btn cta-channel-btn--ig">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+            </svg>
+            <span>INSTAGRAM</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <img src="assets/logo-white.png" alt="Jorb.media Logo" style="height: 32px; width: auto; vertical-align: middle;">
+      </div>
+      <div class="footer-copy">
+        © 2026 JORB.MEDIA · MOTION DESIGN & EDITORIAL KINETICS · ALL RIGHTS RESERVED
+      </div>
+      <a href="#hero" class="footer-back-to-top">
+        ↑ BACK TO TOP
+      </a>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       VIDEO LIGHTBOX MODAL (Responsive 16:9 & 9:16 Shorts)
+       ======================================================================== -->
+  <div id="video-lightbox" role="dialog" aria-modal="true" aria-label="High-Definition Video Player" aria-hidden="true">
+    <div id="video-lightbox__backdrop"></div>
+    <span id="video-lightbox__esc-hint">PRESS ESC TO CLOSE</span>
+    <div id="video-lightbox__inner">
+      <!-- Local file:/// warning fallback notice -->
+      <div id="video-lightbox__file-warning" style="display: none;">
+        <span>⚠️ Local file preview detected: If your browser restricts iframe playback on <code>file:///</code>, click:</span>
+        <a href="#" target="_blank" rel="noopener noreferrer">OPEN DIRECTLY ON YOUTUBE ↗</a>
+      </div>
+
+      <div id="video-lightbox__bar">
+        <div class="lightbox-meta">
+          <span id="video-lightbox__tag">PROJECT</span>
+          <span id="video-lightbox__title">Project Title</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <a id="video-lightbox__external" href="#" target="_blank" rel="noopener noreferrer" title="Watch directly on YouTube">
+            <span>WATCH ON YOUTUBE</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </a>
+          <button id="video-lightbox__close" aria-label="Close video player">×</button>
+        </div>
+      </div>
+      <div class="video-frame-container" id="lightbox-frame-container">
+        <!-- Dynamic YouTube Embed inserted via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
