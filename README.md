@@ -1,64 +1,56 @@
-# 🎬 JORB.MEDIA — Motion Design & High-Retention Portfolio
+# 🎬 JORB.MEDIA — Portfolio de Motion Design & Edición de Video
 
-High-impact portfolio website for motion designer **Jorge Bustos** (**Jorb.media**), featuring brutalist editorial aesthetics inspired by post-production workflows (*After Effects*, kinetic typography, CRT scanlines, paper grain, and precision speed ramps).
-
----
-
-## ⚡ Key Highlights
-
-* **Official Branding & Logo**: Integrates Jorge's official geometric **JB / Jorb.media** emblem with transparent PNG assets in both Paper White (`assets/logo-white.png`) and Electric Blue (`assets/logo-blue.png`).
-* **Official Contacts**:
-  * **WhatsApp / Phone**: `+57 300857325` (pre-configured conversion message)
-  * **Email**: `jorbustosvisuals@gmail.com`
-* **Bulletproof Video Playback**:
-  * Supports native 16:9 widescreen and **9:16 vertical Reels/Shorts** without awkward black bars.
-  * Instant **"WATCH ON YOUTUBE ↗"** buttons on each card and inside the player modal.
-  * Cross-origin iframe parameters configured for strict compliance.
-* **Full English Copy**:
-  * Precision-crafted for global creative directors, brands, marketing agencies, and top creators.
-* **Local One-Click Server (`start-server.bat`)**:
-  * Browsers sometimes restrict YouTube iframes on raw `file:///` protocols. Double-clicking `start-server.bat` runs a lightweight local server on `http://localhost:3000/` and automatically launches your browser so every video plays without restrictions!
+Portfolio profesional y minimalista de **Jorge Bustos** (**Jorb.media**), diseñado bajo una estética ligera, clara y efectiva inspirada en Apple, orientado a agencias, empresas, startups y marcas.
 
 ---
 
-## 📁 Project Architecture
+## ✨ Características Principales
+
+* **Fondo Claro y Espacioso**: Diseñado sobre `--bg: #FBFBFD` con superficies limpias, líneas finas y sombras suaves.
+* **Tipografía Satoshi**: Jerarquía tipográfica limpia y directa (peso 600 para títulos, peso 400 para cuerpo).
+* **Hero Directo y Breve**: Presentación concisa de Jorge Bustos como motion designer y editor de video, con la mención a *Jeremías 29:11* y acceso directo a proyectos y contacto.
+* **4 Proyectos Destacados**:
+  1. *The AI Room* (VSL comercial en 16:9).
+  2. *Academia Entrenadores Online* (Estudio de tendencias 2026, formato documental).
+  3. *Crash Captain · Clon Podcast* (Short vertical 9:16 de alta retención para móviles y SaaS).
+  4. *Ferrer Law Firm* (Estrategia y autoridad de marca en formato comercial).
+* **Proceso Simple en 3 Pasos**:
+  - `01. Dirección y estructura`
+  - `02. Motion y diseño`
+  - `03. Edición y entrega`
+* **Contactos Directos**: WhatsApp, Instagram (@jorb.media) y correo electrónico.
+
+---
+
+## 📁 Arquitectura del Proyecto
 
 ```
 jorb-media/
-├── index.html           # Full semantic structure, English copy, project cards
-├── start-server.bat     # One-click launcher for local preview with working video embeds
-├── server.ps1           # Zero-dependency local preview server
+├── index.html           # Estructura semántica, limpia y efectiva
+├── start-server.bat     # Servidor local en 1 clic (http://localhost:3000)
+├── server.ps1           # Script servidor de previsualización sin dependencias
 ├── assets/
-│   ├── logo-white.png   # Transparent emblem for dark navigation & headers
-│   ├── logo-blue.png    # Transparent official electric blue logo
-│   └── *.jpg            # Originals uploaded by user
+│   ├── logo-dark.png    # Imagotipo oscuro transparente para fondo claro
+│   ├── logo-blue.png    # Imagotipo azul de marca transparente
+│   └── logo-white.png   # Versión blanca de respaldo
 ├── css/
-│   ├── tokens.css       # Brand tokens: #0a192f, #1c64f2, #e2ecff, #f5f7fa
-│   ├── reset.css        # Clean baseline reset
-│   ├── textures.css     # Grain, paper noise, scanlines, AE keyframes, crop marks
-│   ├── components.css   # Navigation, cards, modal, filter tabs, direct buttons
-│   └── layout.css       # Responsive grid system
+│   ├── tokens.css       # Variables de diseño (colores, Satoshi, curvas de easing, radios)
+│   ├── reset.css        # Reseteo moderno con soporte para prefers-reduced-motion
+│   ├── textures.css     # Líneas sutiles y divisores
+│   ├── layout.css       # Grillas, espaciados y contenedor de 1100px
+│   └── components.css   # Navegación, tarjetas de trabajo, pills de contacto y modal
 └── js/
-    └── main.js          # Lightbox logic, filters, mouse parallax, 60fps timecode
+    └── main.js          # Reveal al scroll, lightbox responsivo para 16:9 y 9:16
 ```
 
 ---
 
-## 🚀 How to Run & Preview
+## 🚀 Cómo Probar en Local
 
-### Option A: Recommended (Flawless Video Playback)
-Double click **`start-server.bat`** inside `jorb-media`.
-This starts a lightweight server at `http://localhost:3000/` and automatically opens your browser. All YouTube iframes and modal videos will play smoothly!
+### Opción A: Servidor Local (Recomendado)
+Haz doble clic en **`start-server.bat`** dentro de la carpeta `jorb-media`.
+Abrirá automáticamente tu navegador en `http://localhost:3000/`.
 
-### Option B: Direct File Open
-You can also open `index.html` directly:
+### Opción B: Archivo Directo
+Abre directamente `index.html` en tu navegador:
 `C:\Users\jorge\.gemini\antigravity\scratch\jorb-media\index.html`
-*(Note: If Chrome/Edge blocks video embeds due to local `file:///` restrictions, click the red "YT ↗" / "WATCH ON YOUTUBE" button or use Option A).*
-
----
-
-## 🌐 Deploy to Web (100% Free in 1 Minute)
-
-1. **Vercel**: Drag and drop the `jorb-media` folder into [vercel.com/new](https://vercel.com/new).
-2. **Netlify**: Drag and drop the folder into [app.netlify.com/drop](https://app.netlify.com/drop).
-3. **GitHub Pages**: Push this repo to GitHub and enable Pages in repository settings.

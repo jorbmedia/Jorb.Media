@@ -1,50 +1,42 @@
 :root {
-  /* Brand Colors from user specification */
-  --color-navy-void: #0a192f;
-  --color-navy-surface: #0e2240;
-  --color-navy-card: rgba(14, 34, 64, 0.6);
-  --color-navy-elevated: #163056;
-  
-  --color-blue-electric: #1c64f2;
-  --color-blue-glow: rgba(28, 100, 242, 0.4);
-  --color-blue-hover: #3b82f6;
-  
-  --color-ice-blue: #e2ecff;
-  --color-ice-dim: rgba(226, 236, 255, 0.65);
-  --color-paper-white: #f5f7fa;
-  --color-paper-muted: #94a8c9;
-  --color-paper-dim: #546b91;
-  
-  /* Apple Glass & Minimalist Borders */
-  --border-subtle: rgba(226, 236, 255, 0.08);
-  --border-medium: rgba(226, 236, 255, 0.16);
-  --border-active: #1c64f2;
-  --border-glow: 0 0 30px rgba(28, 100, 242, 0.35);
+  /* Apple-inspired Light Palette with Jorb Brand Blue */
+  --bg: #FBFBFD;
+  --surface: #FFFFFF;
+  --surface-secondary: #F5F5F7;
+  --text: #1D1D1F;
+  --text-muted: #6E6E73;
+  --text-light: #86868B;
+  --line: rgba(0, 0, 0, 0.08);
+  --line-subtle: rgba(0, 0, 0, 0.04);
 
-  --glass-bg: rgba(10, 25, 47, 0.65);
-  --glass-card: rgba(14, 34, 64, 0.55);
-  --glass-blur: blur(20px);
-  --glass-border: 1px solid rgba(226, 236, 255, 0.09);
+  /* Official Brand Colors */
+  --accent: #1C64F2;        /* Azul principal de marca */
+  --accent-hover: #1551C9;  /* Hover para botones de acción */
+  --accent-subtle: #E2ECFF; /* Tinte suave para pills y detalles */
+  --navy: #0A192F;          /* Azul noche de marca para elementos de contraste */
 
-  /* Typography: Cabinet Grotesk (Display) & Satoshi (Body) + Editorial Serif Accent */
-  --font-display: 'Cabinet Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-sans: 'Satoshi', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-serif: 'Instrument Serif', Georgia, serif;
-  --font-mono: 'Cabinet Grotesk', -apple-system, sans-serif;
-
-  /* Motion Timing (Apple smooth spring curves) */
-  --ease-apple: cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-smooth: cubic-bezier(0.25, 1, 0.5, 1);
-  --duration-fast: 0.2s;
-  --duration-norm: 0.35s;
-  --duration-slow: 0.6s;
-
-  /* Layout & Apple Radii */
-  --max-width: 1240px;
-  --nav-height: 64px;
-  --radius-xs: 6px;
-  --radius-sm: 10px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
+  /* Structural Radii */
+  --radius: 20px;
+  --radius-sm: 12px;
   --radius-pill: 9999px;
+
+  /* Motion & Easing Curves */
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 0.2s;
+  --duration-base: 0.35s;
+  --duration-reveal: 0.8s;
+
+  /* Shadows - Ultra soft & diffused (Apple style) */
+  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.04);
+  --shadow-hover: 0 16px 36px rgba(0, 0, 0, 0.08);
+  --shadow-modal: 0 24px 60px rgba(0, 0, 0, 0.16);
+
+  /* Layout & Sizing */
+  --max-width: 1100px;
+  --max-width-narrow: 840px;
+  --nav-height: 72px;
+
+  /* Typography */
+  --font-primary: 'Satoshi', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: 'Cabinet Grotesk', 'Satoshi', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }

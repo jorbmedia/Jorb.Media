@@ -1,98 +1,20 @@
 /* ==========================================================================
-   ATMOSPHERIC EFFECTS & APPLE MINIMALIST LIGHTING
+   TEXTURES & REFINED ACCENTS (Apple-inspired minimalism)
    ========================================================================== */
 
-/* 1. Ultra-subtle Apple Studio Micro-Grain (Invisible yet tactile) */
-.global-grain {
-  position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 999;
-  opacity: 0.02;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  mix-blend-mode: overlay;
-}
-
-/* 2. Apple Ambient Radial Lighting Orbs */
-.ambient-glow {
-  position: absolute;
-  pointer-events: none;
-  border-radius: 50%;
-  filter: blur(100px);
-  z-index: 0;
-}
-.ambient-glow--hero {
-  top: 15%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(800px, 90vw);
-  height: 400px;
-  background: radial-gradient(circle, rgba(28, 100, 242, 0.18) 0%, rgba(10, 25, 47, 0) 70%);
-}
-.ambient-glow--spotlight {
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: min(900px, 95vw);
-  height: 500px;
-  background: radial-gradient(circle, rgba(28, 100, 242, 0.12) 0%, rgba(10, 25, 47, 0) 70%);
-}
-
-/* 3. Hairline Dividers (Replacing torn paper with sleek Apple lines) */
-.hairline-divider {
-  width: 100%;
+/* Hairline dividers */
+.section-divider {
+  border: none;
   height: 1px;
-  background: linear-gradient(
-    90deg, 
-    transparent 0%, 
-    rgba(226, 236, 255, 0.12) 30%, 
-    rgba(28, 100, 242, 0.25) 50%, 
-    rgba(226, 236, 255, 0.12) 70%, 
-    transparent 100%
-  );
-  position: relative;
-  z-index: 2;
+  background-color: var(--line);
+  width: min(100% - 3rem, var(--max-width));
+  margin: 0 auto;
 }
 
-/* 4. Typographic Contrast: Apple Editorial Serif */
-.editorial-serif {
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  color: var(--color-ice-blue);
-  display: inline-block;
-  padding: 0 0.15em;
-}
-
-/* 5. Apple Gradient Text */
-.text-gradient-apple {
-  background: linear-gradient(180deg, #ffffff 40%, rgba(226, 236, 255, 0.65) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.text-gradient-blue {
-  background: linear-gradient(135deg, #ffffff 20%, var(--color-blue-electric) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* 6. Apple Glass Card */
-.glass-card {
-  background: var(--glass-card);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
-  border: var(--glass-border);
-  border-radius: var(--radius-lg);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
-  transition: all var(--duration-norm) var(--ease-apple);
-}
-.glass-card:hover {
-  border-color: rgba(28, 100, 242, 0.35);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(28, 100, 242, 0.15);
-  transform: translateY(-4px);
+/* Glassmorphism subtle blur */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--line);
 }
