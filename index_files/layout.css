@@ -16,6 +16,14 @@
 .section {
   position: relative;
   padding: clamp(6.5rem, 11vw, 9.5rem) 0;
+  scroll-margin-top: 5.5rem;
+}
+
+#hero,
+#trabajo,
+#proceso,
+#contacto {
+  scroll-margin-top: 5.5rem;
 }
 
 /* 1. SECTION HEADERS */
