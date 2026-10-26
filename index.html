@@ -19,15 +19,20 @@
   <link rel="stylesheet" href="./index_files/textures.css">
   <link rel="stylesheet" href="./index_files/layout.css">
   <link rel="stylesheet" href="./index_files/components.css">
-</head>
-<body>
+<style id="__web-inspector-hide-shortcut-style__">
+.__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *
+{
+    visibility: hidden !important;
+}
+</style></head>
+<body id="top" style="">
 
   <!-- ========================================================================
        1. NAVIGATION (Apple-style blur & dark logo for light surface)
        ======================================================================== -->
-  <header class="site-header is-scrolled" role="banner">
+  <header class="site-header" role="banner">
     <div class="container nav-bar">
-      <a href="file:///C:/Users/jorge/.gemini/antigravity/scratch/jorb-media/index.html#" class="nav-logo" aria-label="Jorb.media Inicio">
+      <a href="file:///C:/Users/jorge/.gemini/antigravity/scratch/jorb-media/index.html#top" class="nav-logo" aria-label="Jorb.media Inicio">
         <img src="./index_files/logo-dark.png" alt="Jorb.media Logo">
       </a>
 
@@ -35,7 +40,7 @@
         <a href="file:///C:/Users/jorge/.gemini/antigravity/scratch/jorb-media/index.html#trabajo" class="nav-link">Trabajo</a>
         <a href="file:///C:/Users/jorge/.gemini/antigravity/scratch/jorb-media/index.html#proceso" class="nav-link">Proceso</a>
         <a href="file:///C:/Users/jorge/.gemini/antigravity/scratch/jorb-media/index.html#contacto" class="nav-link">Contacto</a>
-        <a href="file:///C:/Users/jorge/.gemini/antigravity/scratch/jorb-media/index.html#contacto" class="nav-cta">Hablemos</a>
+        <a href="https://wa.link/o617z4" target="_blank" rel="noopener noreferrer" class="nav-cta">Hablemos</a>
       </nav>
 
       <button class="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
@@ -47,7 +52,7 @@
   <main id="main-content">
 
     <!-- ========================================================================
-         2. HERO SECTION (Direct, clean, personal intro with Jeremías 29:11)
+         2. HERO SECTION
          ======================================================================== -->
     <section class="section section--hero" id="hero">
       <div class="container">
@@ -62,8 +67,6 @@
             Tu mensaje, bien contado.
           </h1>
 
-          
-
           <div class="hero-verse" title="Jeremías 29:11">
             Jeremías 29:11
           </div>
@@ -76,7 +79,7 @@
               </svg>
             </a>
 
-            <a href="https://wa.me/57300857325?text=Hola%20Jorge,%20me%20gustar%C3%ADa%20hablar%20sobre%20un%20proyecto%20audiovisual." target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+            <a href="https://wa.link/o617z4" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
               <span>Escríbeme</span>
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -91,23 +94,135 @@
     <hr class="section-divider" aria-hidden="true">
 
     <!-- ========================================================================
-         3. PROYECTOS DESTACADOS (4 piezas grandes: VSL, corporativo y SaaS)
+         3. TRABAJO SELECCIONADO (Filtrable por VSL, YT y Short form)
          ======================================================================== -->
     <section class="section" id="trabajo">
       <div class="container">
         
-        <div class="section-header reveal-on-scroll is-revealed">
+        <div class="section-header section-header--centered reveal-on-scroll is-revealed">
           <span class="section-eyebrow">Portafolio</span>
           <h2 class="section-title">Trabajo seleccionado</h2>
           <p class="section-lead">Algunas piezas de las que estoy orgulloso: ventas, marca y contenido vertical. Cada una empezó con un mensaje que había que contar bien.</p>
         </div>
 
-        <div class="work-stack">
+        <!-- ====================================================================
+             HUB DE CATEGORÍAS (Estilo ZakariaHQ: División visual en 3 tarjetas)
+             ==================================================================== -->
+        <div class="category-grid reveal-on-scroll is-revealed" role="region" aria-label="Categorías de proyectos">
+          
+          <!-- Card 1: VSL -->
+          <article class="category-card" data-category-target="vsl" tabindex="0" role="button" aria-label="Explorar proyectos VSL">
+            <div class="category-card__media">
+              <img src="./index_files/maxresdefault.jpg" alt="Proyectos VSL" class="category-card__img" loading="lazy" onerror="this.src='https://img.youtube.com/vi/Q9GlmSb3DUk/hqdefault.jpg'">
+              <div class="category-card__overlay"></div>
+            </div>
+            <div class="category-card__badge-top">
+              <span class="category-card__tag">01 · Ventas</span>
+              <span class="category-card__count">1 proyecto</span>
+            </div>
+            <div class="category-card__body">
+              <div class="category-card__pill">
+                <span class="category-card__name">VSL</span>
+                <span class="category-card__arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H7M17 7V17"></path>
+                  </svg>
+                </span>
+              </div>
+              <p class="category-card__desc">Videos de ventas con la marca como protagonista, interfaces animadas y ritmo propio.</p>
+            </div>
+          </article>
 
-          <!-- Pieza 1: The AI Room -->
-          <article class="work-card reveal-on-scroll is-revealed">
-            <div class="work-card__media" data-video-id="Q9GlmSb3DUk" data-video-title="The AI Room: un video de ventas con la marca como protagonista" data-video-aspect="16-9">
-              <img src="./index_files/maxresdefault.jpg" alt="The AI Room VSL Thumbnail" class="work-card__img" loading="lazy">
+          <!-- Card 2: YouTube -->
+          <article class="category-card" data-category-target="yt" tabindex="0" role="button" aria-label="Explorar proyectos de YouTube">
+            <div class="category-card__media">
+              <img src="./index_files/maxresdefault(1).jpg" alt="Proyectos YouTube" class="category-card__img" loading="lazy" onerror="this.src='https://img.youtube.com/vi/vJcaFOe0J9M/hqdefault.jpg'">
+              <div class="category-card__overlay"></div>
+            </div>
+            <div class="category-card__badge-top">
+              <span class="category-card__tag">02 · Formato largo</span>
+              <span class="category-card__count">3 proyectos</span>
+            </div>
+            <div class="category-card__body">
+              <div class="category-card__pill">
+                <span class="category-card__name">YouTube</span>
+                <span class="category-card__arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H7M17 7V17"></path>
+                  </svg>
+                </span>
+              </div>
+              <p class="category-card__desc">Edición dinámica con escenas de motion graphics y branding minimalista para creadores y marcas.</p>
+            </div>
+          </article>
+
+          <!-- Card 3: Short form -->
+          <article class="category-card" data-category-target="short-form" tabindex="0" role="button" aria-label="Explorar proyectos Short form">
+            <div class="category-card__media">
+              <img src="./index_files/maxresdefault(2).jpg" alt="Proyectos Short form" class="category-card__img" loading="lazy" onerror="this.src='https://img.youtube.com/vi/Rwd3MMvGE6o/hqdefault.jpg'">
+              <div class="category-card__overlay"></div>
+            </div>
+            <div class="category-card__badge-top">
+              <span class="category-card__tag">03 · Vertical 9:16</span>
+              <span class="category-card__count">5 proyectos</span>
+            </div>
+            <div class="category-card__body">
+              <div class="category-card__pill">
+                <span class="category-card__name">Short form</span>
+                <span class="category-card__arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H7M17 7V17"></path>
+                  </svg>
+                </span>
+              </div>
+              <p class="category-card__desc">Shorts, Reels y anuncios verticales con ritmo, atmósfera y tipografía pensada para el celular.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Hint / Enlace directo a todos -->
+        <div class="category-grid-hint reveal-on-scroll is-revealed">
+          <span>Haz clic en una categoría para abrir sus proyectos</span>
+          <span aria-hidden="true">·</span>
+          <button type="button" class="link-btn" id="show-all-btn">O ver los 9 proyectos juntos ↓</button>
+        </div>
+
+        <!-- ====================================================================
+             GALERÍA DESPLEGABLE (Se abre al hacer clic en una categoría)
+             ==================================================================== -->
+        <div id="category-showcase" class="category-showcase" style="display: none;">
+          
+          <div class="category-showcase__header">
+            <div class="showcase-active-indicator">
+              <h3 class="showcase-active-indicator__title" id="showcase-active-title">Short form · Formato vertical 9:16</h3>
+              <span class="showcase-active-indicator__badge" id="showcase-active-badge">5 proyectos</span>
+            </div>
+
+            <div class="category-showcase__controls">
+              <div class="filter-tabs" role="tablist" aria-label="Cambiar filtro de categoría">
+                <button class="filter-tab" data-filter="vsl" role="tab" aria-selected="false">VSL [1]</button>
+                <button class="filter-tab" data-filter="yt" role="tab" aria-selected="false">YT [3]</button>
+                <button class="filter-tab is-active" data-filter="short-form" role="tab" aria-selected="true">Short form [5]</button>
+                <button class="filter-tab" data-filter="all" role="tab" aria-selected="false">Todos [9]</button>
+              </div>
+
+              <button type="button" id="showcase-collapse-btn" class="showcase-back-btn" title="Cerrar galería y volver a categorías">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 15l-6-6-6 6"></path>
+                </svg>
+                <span>Cerrar</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="work-stack" id="work-stack">
+
+          <!-- 1. VSL: La Sala de IA -->
+          <article class="work-card reveal-on-scroll is-revealed" data-category="vsl" style="display: none; opacity: 1; transform: translateY(0px);">
+            <div class="work-card__media" data-video-id="Q9GlmSb3DUk" data-video-title="La Sala de IA: un video de ventas con la marca como protagonista" data-video-aspect="16-9">
+              <img src="./index_files/maxresdefault.jpg" alt="La Sala de IA Thumbnail" class="work-card__img" loading="lazy" onerror="this.src='https://img.youtube.com/vi/Q9GlmSb3DUk/hqdefault.jpg'">
               <div class="work-card__play-badge" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
               </div>
@@ -123,17 +238,17 @@
               </p>
               <div class="work-card__footer">
                 <span>Cliente: La sala de IA</span>
-                <button class="work-card__trigger-link" data-video-id="Q9GlmSb3DUk" data-video-title="The AI Room" data-video-aspect="16-9">
+                <button class="work-card__trigger-link" data-video-id="Q9GlmSb3DUk" data-video-title="La Sala de IA" data-video-aspect="16-9">
                   Ver pieza ↗
                 </button>
               </div>
             </div>
           </article>
 
-          <!-- Pieza 2: Academia de Entrenadores Online -->
-          <article class="work-card reveal-on-scroll is-revealed">
+          <!-- 2. YT: Academia de Entrenadores Online (Estudio 2026) -->
+          <article class="work-card reveal-on-scroll is-revealed" data-category="yt" style="display: none; opacity: 1; transform: translateY(0px);">
             <div class="work-card__media" data-video-id="vJcaFOe0J9M" data-video-title="Academia de Entrenadores Online: un estudio sobre el fitness 2026" data-video-aspect="16-9">
-              <img src="./index_files/maxresdefault(1).jpg" alt="Academia Entrenadores Online Thumbnail" class="work-card__img" loading="lazy">
+              <img src="./index_files/maxresdefault(1).jpg" alt="Academia Entrenadores Online Thumbnail" class="work-card__img" loading="lazy" onerror="this.src='https://img.youtube.com/vi/vJcaFOe0J9M/hqdefault.jpg'">
               <div class="work-card__play-badge" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
               </div>
@@ -156,10 +271,62 @@
             </div>
           </article>
 
-          <!-- Pieza 3: Crash Captain -->
-          <article class="work-card work-card--vertical reveal-on-scroll is-revealed">
+          <!-- 3. YT: Multiplica x2 Tu Facturación -->
+          <article class="work-card reveal-on-scroll is-revealed" data-category="yt" style="display: none; opacity: 1; transform: translateY(0px);">
+            <div class="work-card__media" data-video-id="MQFYJdtyv8Q" data-video-title="Multiplica x2 Tu Facturación como Entrenador Online" data-video-aspect="16-9">
+              <img src="./index_files/maxresdefault(3).jpg" alt="Multiplica x2 Tu Facturación Thumbnail" class="work-card__img" loading="lazy" onerror="this.src='https://img.youtube.com/vi/MQFYJdtyv8Q/hqdefault.jpg'">
+              <div class="work-card__play-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+              </div>
+              <a href="https://www.youtube.com/watch?v=MQFYJdtyv8Q" target="_blank" rel="noopener noreferrer" class="work-card__ext-btn" title="Abrir directamente en YouTube">
+                YouTube ↗
+              </a>
+            </div>
+            <div class="work-card__content">
+              <span class="work-card__tag">YouTube · Formato largo</span>
+              <h3 class="work-card__title">Multiplica x2 tu facturación como entrenador online</h3>
+              <p class="work-card__result">
+                Edición de ritmo ágil con gráficos informativos en pantalla, diseño sonoro estructurado y cortes sincronizados para maximizar la retención del espectador.
+              </p>
+              <div class="work-card__footer">
+                <span>Cliente: Academia de Entrenadores Online</span>
+                <button class="work-card__trigger-link" data-video-id="MQFYJdtyv8Q" data-video-title="Multiplica x2 Tu Facturación" data-video-aspect="16-9">
+                  Ver pieza ↗
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. YT: Así Gané mis Primeros 2000€ -->
+          <article class="work-card reveal-on-scroll is-revealed" data-category="yt" style="display: none; opacity: 1; transform: translateY(0px);">
+            <div class="work-card__media" data-video-id="gnB5EvMhJGQ" data-video-title="Así Gané mis Primeros 2000€ como Entrenador Personal" data-video-aspect="16-9">
+              <img src="./index_files/maxresdefault(4).jpg" alt="Primeros 2000€ Thumbnail" class="work-card__img" loading="lazy" onerror="this.src='https://img.youtube.com/vi/gnB5EvMhJGQ/hqdefault.jpg'">
+              <div class="work-card__play-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+              </div>
+              <a href="https://www.youtube.com/watch?v=gnB5EvMhJGQ" target="_blank" rel="noopener noreferrer" class="work-card__ext-btn" title="Abrir directamente en YouTube">
+                YouTube ↗
+              </a>
+            </div>
+            <div class="work-card__content">
+              <span class="work-card__tag">YouTube · Formato largo</span>
+              <h3 class="work-card__title">Así gané mis primeros 2.000€ como entrenador personal</h3>
+              <p class="work-card__result">
+                Estructuré la narrativa visual con infografías y animaciones de datos limpias, ilustrando la experiencia de negocio sin saturar la pantalla.
+              </p>
+              <div class="work-card__footer">
+                <span>Cliente: Academia de Entrenadores Online</span>
+                <button class="work-card__trigger-link" data-video-id="gnB5EvMhJGQ" data-video-title="Primeros 2000€" data-video-aspect="16-9">
+                  Ver pieza ↗
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Short form: Crash Captain -->
+          <article class="work-card work-card--vertical reveal-on-scroll is-revealed" data-category="short-form" style="display: flex; opacity: 1; transform: translateY(0px);">
             <div class="work-card__media" data-video-id="Rwd3MMvGE6o" data-video-title="Crash Captain: un short con ritmo y atmósfera" data-video-aspect="9-16">
-              <img src="./index_files/maxresdefault(2).jpg" alt="Crash Captain Shorts Thumbnail" class="work-card__img" loading="lazy">
+              <img src="./index_files/maxresdefault(2).jpg" alt="Crash Captain Shorts Thumbnail" class="work-card__img" loading="lazy" onerror="this.src='https://img.youtube.com/vi/Rwd3MMvGE6o/hqdefault.jpg'">
               <div class="work-card__play-badge" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
               </div>
@@ -182,10 +349,10 @@
             </div>
           </article>
 
-          <!-- Pieza 4: Ferrer Law Firm -->
-          <article class="work-card work-card--vertical reveal-on-scroll is-revealed">
+          <!-- 6. Short form: Ferrer Law Firm -->
+          <article class="work-card work-card--vertical reveal-on-scroll is-revealed" data-category="short-form" style="display: flex; opacity: 1; transform: translateY(0px);">
             <div class="work-card__media" data-video-id="09mFiImqVSQ" data-video-title="Ferrer Law Firm: claridad y confianza en pocos segundos" data-video-aspect="9-16">
-              <img src="./index_files/maxresdefault(3).jpg" alt="Ferrer Law Firm Thumbnail" class="work-card__img" loading="lazy">
+              <img src="./index_files/maxresdefault(5).jpg" alt="Ferrer Law Firm Thumbnail" class="work-card__img" loading="lazy" onerror="this.src='https://img.youtube.com/vi/09mFiImqVSQ/hqdefault.jpg'">
               <div class="work-card__play-badge" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
               </div>
@@ -208,9 +375,65 @@
             </div>
           </article>
 
-        </div>
+          <!-- 7. Short form: Enrique Moris -->
+          <article class="work-card work-card--vertical reveal-on-scroll is-revealed" data-category="short-form" style="display: flex; opacity: 1; transform: translateY(0px);">
+            <div class="work-card__media" data-video-id="GCXHcWjIKFs" data-video-title="Enrique Moris: anuncio publicitario de alto impacto" data-video-aspect="9-16">
+              <img src="./index_files/maxresdefault(6).jpg" alt="Enrique Moris Thumbnail" class="work-card__img" loading="lazy" onerror="this.src='https://img.youtube.com/vi/GCXHcWjIKFs/hqdefault.jpg'">
+              <div class="work-card__play-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+              </div>
+              <a href="https://youtube.com/shorts/GCXHcWjIKFs" target="_blank" rel="noopener noreferrer" class="work-card__ext-btn" title="Abrir directamente en YouTube">
+                YouTube ↗
+              </a>
+            </div>
+            <div class="work-card__content">
+              <span class="work-card__tag">Short vertical · 9:16</span>
+              <h3 class="work-card__title">Enrique Moris: anuncio publicitario de alto impacto</h3>
+              <p class="work-card__result">
+                Montaje dinámico enfocado en conversión para pauta, integrando tipografía cinética rápida, efectos de sonido y ritmo diseñado para frenar el scroll.
+              </p>
+              <div class="work-card__footer">
+                <span>Cliente: Enrique Moris</span>
+                <button class="work-card__trigger-link" data-video-id="GCXHcWjIKFs" data-video-title="Enrique Moris" data-video-aspect="9-16">
+                  Ver short 9:16 ↗
+                </button>
+              </div>
+            </div>
+          </article>
 
-      </div>
+          <!-- 8. Short form: CQH Ad 1 -->
+          <article class="work-card work-card--vertical reveal-on-scroll is-revealed" data-category="short-form" style="display: flex; opacity: 1; transform: translateY(0px);">
+            <div class="work-card__media" data-video-id="GKNNXovH-ik" data-video-title="CQH: campaña publicitaria vertical 01" data-video-aspect="9-16">
+              <img src="./index_files/maxresdefault(7).jpg" alt="CQH Ad 1 Thumbnail" class="work-card__img" loading="lazy" onerror="this.src='https://img.youtube.com/vi/GKNNXovH-ik/hqdefault.jpg'">
+              <div class="work-card__play-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+              </div>
+              <a href="https://youtube.com/shorts/GKNNXovH-ik" target="_blank" rel="noopener noreferrer" class="work-card__ext-btn" title="Abrir directamente en YouTube">
+                YouTube ↗
+              </a>
+            </div>
+            <div class="work-card__content">
+              <span class="work-card__tag">Short vertical · 9:16</span>
+              <h3 class="work-card__title">CQH: campaña publicitaria vertical 01</h3>
+              <p class="work-card__result">
+                Animación de interfaces y composición visual para pauta en redes sociales, con corrección de color pulida y énfasis en la propuesta de valor.
+              </p>
+              <div class="work-card__footer">
+                <span>Cliente: CQH</span>
+                <button class="work-card__trigger-link" data-video-id="GKNNXovH-ik" data-video-title="CQH Ad 1" data-video-aspect="9-16">
+                  Ver short 9:16 ↗
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. Short form: CQH Ad 2 -->
+          
+
+          </div><!-- /.work-stack -->
+        </div><!-- /#category-showcase -->
+
+      </div><!-- /.container -->
     </section>
 
     <hr class="section-divider" aria-hidden="true">
@@ -277,7 +500,7 @@
           </p>
 
           <div class="contact-actions">
-            <!-- WhatsApp -->
+            <!-- WhatsApp oficial -->
             <a href="https://wa.link/o617z4" target="_blank" rel="noopener noreferrer" class="contact-pill contact-pill--whatsapp">
               <svg viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12.031 2C6.516 2 2.031 6.484 2.031 12c0 1.954.562 3.828 1.625 5.438L2 22l4.672-1.609A9.965 9.965 0 0 0 12.031 22c5.516 0 10-4.484 10-10s-4.484-10-10-10zm0 18.281c-1.688 0-3.328-.484-4.75-1.391l-.344-.219-2.781.953.953-2.703-.234-.375a8.27 8.27 0 0 1-1.281-4.547c0-4.563 3.719-8.281 8.281-8.281 4.563 0 8.281 3.719 8.281 8.281 0 4.563-3.719 8.281-8.281 8.281z"></path>
@@ -320,11 +543,20 @@
       <p class="footer-copy">
         © 2026 Jorb.media · Jorge Bustos. Todos los derechos reservados.
       </p>
-      <a href="file:///C:/Users/jorge/.gemini/antigravity/scratch/jorb-media/index.html#hero" class="footer-link">
+      <a href="file:///C:/Users/jorge/.gemini/antigravity/scratch/jorb-media/index.html#top" class="footer-link">
         Volver arriba ↑
       </a>
     </div>
   </footer>
+
+  <!-- ========================================================================
+       7. BOTÓN FLOTANTE VOLVER ARRIBA (Persistent corner button)
+       ======================================================================== -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Ir al inicio de la página" title="Volver al inicio">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"></path>
+    </svg>
+  </button>
 
   <!-- ========================================================================
        VIDEO LIGHTBOX MODAL (16:9 y 9:16 Shorts)
@@ -333,15 +565,13 @@
     <div class="video-lightbox__backdrop"></div>
     <div class="video-lightbox__inner">
       <div class="video-lightbox__bar">
-        <h3 class="video-lightbox__title">Reproduciendo proyecto</h3>
+        <h3 class="video-lightbox__title">Enrique Moris: anuncio publicitario de alto impacto</h3>
         <div class="video-lightbox__controls">
-          <a class="video-lightbox__ext-link" href="file:///C:/Users/jorge/.gemini/antigravity/scratch/jorb-media/index.html#" target="_blank" rel="noopener noreferrer">Ver en YouTube ↗</a>
+          <a class="video-lightbox__ext-link" href="https://youtube.com/shorts/GCXHcWjIKFs" target="_blank" rel="noopener noreferrer">Ver en YouTube ↗</a>
           <button class="video-lightbox__close" aria-label="Cerrar reproductor">×</button>
         </div>
       </div>
-      <div class="video-frame-container" id="lightbox-frame-container">
-        <!-- Iframe de YouTube inyectado dinámicamente -->
-      </div>
+      <div class="video-frame-container is-vertical" id="lightbox-frame-container"></div>
     </div>
   </div>
 
